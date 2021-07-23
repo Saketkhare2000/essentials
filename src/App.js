@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Adobe from './components/Adobe';
+import Affinity from './components/Afiinity';
+import Header from './components/Header';
+import Nav from './components/Nav';
+import Software from './components/Software';
+import GlobalStyle from './globalStyle';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalStyle />
+      <Nav />
+      <Header />
+      <Adobe />
+      <Affinity />
+      <Software />
     </div>
   );
 }
